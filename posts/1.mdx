@@ -83,7 +83,10 @@ output {
 
 # 2、结合logback远程推送日志
 ## 2-1 pom.xml
-注意：<br />如果导入的是6.x版本不会在控制台看见任何额外日志信息。<br />如果导入的是5.x版本会在控制台看见logback.xml加载的信息。
+注意：    
+如果导入的是6.x版本不会在控制台看见任何额外日志信息。    
+如果导入的是5.x版本会在控制台看见logback.xml加载的信息。
+
 ```java
 <dependency>
     <groupId>net.logstash.logback</groupId>
@@ -114,7 +117,9 @@ output {
 
 
 ## 2-3、logback.xml配置
+
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/872322/1651809214092-d541c03e-7bdf-48fb-859d-26d24e7de339.png#clientId=ua2c493b8-1ff8-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=390&id=u2e65e32a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=390&originWidth=960&originalType=binary&ratio=1&rotation=0&showTitle=false&size=48913&status=done&style=none&taskId=u628211b5-b046-4165-a0b7-7aa703af6f2&title=&width=960)
+
 ```java
 <!-- logstash远程日志配置-->
 <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
@@ -124,7 +129,8 @@ output {
 ```
 
 # 3、运行LogStash:
-运行LogStash的时候，记得指定配置文件，比如我这里的配置文件名叫做：mylogstash.conf<br />运行时的命令/编写bat：
+运行LogStash的时候，记得指定配置文件，比如我这里的配置文件名叫做：mylogstash.con  
+运行时的命令/编写bat：
 ```java
 @echo off
 
